@@ -1,0 +1,11 @@
+<ul *ngIf="total_pages && total_pages.length > 0">
+    <li *ngFor="let pageNo of total_pages" style="display:  inline;">
+        <button type="button" (click)="getCompetitions(pageNo + 1)">{{pageNo + 1 }}</button>&nbsp;
+    </li>
+</ul>
+
+<ul *ngIf="competitionData && competitionData.length > 0">
+    <li *ngFor="let competition of competitionData">
+        {{competition?.name}} - {{competition?.winner}} - {{competition?.runnerup}} - {{competition?.year}}
+    </li>
+</ul>

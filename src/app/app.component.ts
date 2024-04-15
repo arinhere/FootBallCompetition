@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FootballCompetitionComponent } from './football-competition/football-competition.component';
 
 @Component({
   selector: 'app-root',
